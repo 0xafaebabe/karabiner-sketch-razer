@@ -1,7 +1,9 @@
 ## Karabiner Elements keybindings for Sketch.app and Razer Tartarus
 This is a pretty niche thing, but I bought a Razer Tartarus (Pro) gaming keypad specifically for mapping shortcuts to design programs like Sketch, Axure, etc. to increase my speed. Unfortunately, Razer's config program (Synapse 3) is only for Windows at this point—but Karabiner Elements for macos to the rescue!
 
-Once you've [installed Karabiner][https://pqrs.org/osx/karabiner/], use this link to [install the keybindings][karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/0xafaebabe/karabiner-sketch-razer/master/razersketch.json]
+Once you've [installed Karabiner](https://pqrs.org/osx/karabiner/), copy and paste this link  (that Github markdown does not like) into your browser:
+
+`karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/0xafaebabe/karabiner-sketch-razer/master/razersketch.json`
 
 Alternatively, you can download the json file and copy it to ~/.config/karabiner/assets/complex_modifications.
 
