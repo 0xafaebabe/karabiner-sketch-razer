@@ -274,14 +274,17 @@
       }]
     }]
   },{
-    "description": "fn-11 -> delete",
+    "description": "fn-11 -> select all",
     "manipulators": [{
       "type": "basic",
       "from": {
         "key_code": 57,
         "modifiers": { "mandatory": [ "fn" ], "optional" : [ "any" ]  }
       },
-      "to": [{ "key_code": 42 }],
+      "to": [{
+        "key_code": "a",
+        "modifiers": [ "left_command" ]
+      }],
       "conditions": [{
         "type": "device_if",
         "identifiers": [{
@@ -371,17 +374,14 @@
       }]
     }]
   },{
-    "description": "fn-16 -> select all",
+    "description": "fn-16 -> delete",
     "manipulators": [{
       "type": "basic",
       "from": {
         "key_code": 225,
         "modifiers": { "mandatory": [ "fn" ], "optional" : [ "any" ]  }
       },
-      "to": [{
-        "key_code": "a",
-        "modifiers": [ "left_command" ]
-      }],
+      "to": [{ "key_code": 42 }],
       "conditions": [{
         "type": "device_if",
         "identifiers": [{
@@ -630,14 +630,14 @@
       }]
     }]
   },{
-    "description": "11 -> escape",
+    "description": "11 -> tab",
     "manipulators": [{
       "type": "basic",
       "from": {
         "key_code": 57,
         "modifiers": { "optional": [ "any" ] }
       },
-      "to": [{ "key_code": "escape" }],
+      "to": [{ "key_code": "tab" }],
       "conditions": [{
         "type": "device_if",
         "identifiers": [{
@@ -724,14 +724,14 @@
       }]
     }]
   },{
-    "description": "16 -> tab",
+    "description": "16 -> esc",
     "manipulators": [{
       "type": "basic",
       "from": {
         "key_code": 225,
         "modifiers": { "optional": [ "any" ] }
       },
-      "to": [{ "key_code": "tab" }],
+      "to": [{ "key_code": "escape" }],
       "conditions": [{
         "type": "device_if",
         "identifiers": [{
@@ -799,6 +799,20 @@
         "key_code": 44,
         "modifiers": { "optional": [ "any" ] }
       },
+      "to": [{ "key_code": "left_command" }],
+      "conditions": [{
+        "type": "device_if",
+        "identifiers": [{
+          "vendor_id": 5426,
+          "product_id": 580
+        }]
+      }]
+    }]
+  },{
+    "description": "scroll wheel button -> command",
+    "manipulators": [{
+      "type": "basic",
+      "from": { "pointing_button": "button3" },
       "to": [{ "key_code": "left_command" }],
       "conditions": [{
         "type": "device_if",
