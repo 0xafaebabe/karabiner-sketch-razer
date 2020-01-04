@@ -17,6 +17,8 @@ This repository is pretty simple. It contains:
 * A printable key reference
 * The Sketch source file for the reference in case you want to make layout changes.
 
+![Image of key layout](https://raw.githubusercontent.com/0xafaebabe/karabiner-sketch-razer/master/Sketch-Razer%20Keybindings%402x.png)
+
 ### Notes
 * Round to Pixel: Sketch does not have a built-in shortcut for this. In order for this to work, you'll need to go to Preferences -> Keyboard -> Shortcuts and add an application specific shortcut for Sketch to map Control-Command-R to the Round to Nearest Pixel menu item.
 * The default Razer d-pad seems weird to me: it is rotated counter-clockwise from what I'd expect. The button pointing up is actually left, the button pointing forward is up, etc. I've remapped this so up is up, down is down, pointing forward is right, and point back towards you is left.
